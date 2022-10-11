@@ -1,0 +1,26 @@
+/*style logo header and footer*/
+.logo {
+  display: inline-block;
+
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+
+  color: var(--logo-primary-text);
+}
+
+.nav > .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo-header {
+  margin-right: 93px;
+
+  color: var(--logo-header-text);
+}
+
+.logo-footer {
+  color: var(--logo-footer-text);
+}
