@@ -1,13 +1,25 @@
 /* style classes */
-.classes-list {
+.classes {
+  @extend %section--centered;
+}
+
+.classes__caption {
+  @extend %container__caption;
+}
+
+.classes__list {
+  @extend %list;
   display: flex;
   justify-content: space-between;
 }
 
-.classes-list > .item {
-  position: relative;
+.classes__item {
+  .classes__list > & {
+    position: relative;
+  }
 }
-.classes-item {
+
+.classes__text {
   position: absolute;
   left: 0;
   bottom: 0;

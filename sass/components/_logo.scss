@@ -1,5 +1,7 @@
 /*style logo header and footer*/
 .logo {
+  @extend %link;
+
   display: inline-block;
 
   font-family: var(--secondary-font-family);
@@ -8,19 +10,19 @@
   line-height: 1.2;
 
   color: var(--logo-primary-text);
-}
 
-.nav > .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
+  &--header {
+    margin-right: 93px;
+  
+    color: var(--logo-header-text);
+  }
 
-.logo-header {
-  margin-right: 93px;
+  &--footer {
+    color: var(--logo-footer-text);
+  }
 
-  color: var(--logo-header-text);
-}
-
-.logo-footer {
-  color: var(--logo-footer-text);
+  .nav > & {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }

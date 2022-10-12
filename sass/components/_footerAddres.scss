@@ -12,12 +12,8 @@
   align-items: baseline;
 }
 
-.cont-adress {
+.block-address {
   margin-right: 70px;
-}
-
-.address-nav > .item + .item {
-  margin-top: 9px;
 }
 
 .address {
@@ -27,63 +23,66 @@
   line-height: 1.71;
 }
 
-.address-footer {
+.address__nav {
+  @extend %list;
+}
+
+.address__item + .address__item {
+  margin-top: 9px;
+}
+
+.address__footer {
+  @extend %link;
   color: var(--white-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover, &:focus {
+    color: var(--accent-text);
+  }
 }
 
-.address-item {
+.address__link {
+  @extend %link;
   color: var(--text-color-footer);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover, &:focus {
+    color: var(--accent-text);
+  }
 }
 
-.address-footer:hover,
-.address-footer:focus,
-.address-item:hover,
-.address-item:focus {
-  color: var(--accent-text);
-}
 
 /* style cont-social */
-.cont-social-title {
-  display: block;
-
-  margin-top: 0;
-  /* margin-right: auto; */
-  margin-bottom: 20px;
-  margin-left: auto;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: var(--logo-footer-text);
+.block-social__title {
+  @extend %footer-title;
 }
 
-.cont-list-social {
+.block-social__list {
+  @extend %card-social;
   display: flex;
 }
 
-.cont-list-social > .social-item {
+.block-social__item {
+  @extend %card-social__item;
   border-radius: 50%;
   background-color: var(--bgd-color-icon-footer);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover, &:focus {
+    background-color: var(--accent-text);
+  }
 }
 
-.cont-list-social > .social-item svg {
+.block-social__link {
+  @extend %card-social__link;
+}
+
+.block-social__icon {
+  @extend %card-social__icon;
   fill: var(--logo-footer-text);
 }
 
-.cont-list-social > .social-item:not(:last-child) {
-  margin-right: 10px;
-}
 
-.cont-list-social > .social-item:hover,
-.cont-list-social > .social-item:focus {
-  background-color: var(--accent-text);
-}
 
 /* style join */
 .join-title {

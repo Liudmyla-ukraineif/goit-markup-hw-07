@@ -13,20 +13,15 @@ img {
   max-width: 100%;
 }
 
-.link {
-  text-decoration: none;
-}
-
-.list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .container {
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
   width: 1200px;
+}
+/*page portpholio*/
+
+.page-portfolio {
+  background: var(--bgd-primary);
 }
