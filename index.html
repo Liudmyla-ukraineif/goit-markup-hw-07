@@ -365,7 +365,7 @@
                                 </svg>
                         </a>
                     </li>
-                    <li class="block-social__item"></li>
+                    <li class="block-social__item">
                         <a href="" class="block-social__link">
                             <svg class="block-social__icon">
                                 <use href="./images/icons.svg#linkedin">
@@ -395,48 +395,48 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="close" data-modal-close>
-                <svg class="icon-close"><use href="./images/icons.svg#close">
+            <button type="button" class="modal__close" data-modal-close>
+                <svg class="modal__icon"><use href="./images/icons.svg#close">
                 </svg>
             </button>
-            <p class="modal-titel">Залиште свої дані, ми вам передзвонимо</p>
+            <p class="modal__titel">Залиште свої дані, ми вам передзвонимо</p>
             <form action="" class="modal-form">
-                <div class="form-element">
-                    <label for="name"class="form-label">Ім'я</label>
-                    <div class="form-wrap">
-                        <input type="text" name="name" id="name">       <svg class="icon-modal"><use href="./images/icons.svg#person"></svg>
+                <div class="modal-form__element">
+                    <label for="name" class="modal-form__label">Ім'я</label>
+                    <div class="modal-form__wrap">
+                        <input type="text" name="name" id="name" class="modal-form__input">       <svg class="modal-form__icon"><use href="./images/icons.svg#person"></svg>
                     </div>                        
                 </div>
 
-                <div class="form-element">
-                    <label for="telephon">Телефон</label>
-                    <div class="form-wrap">
-                        <input type="tel" name="telephon" id="telephon">
-                        <svg class="icon-modal"><use href="./images/icons.svg#phone">
+                <div class="modal-form__element">
+                    <label for="telephon" class="modal-form__label">Телефон</label>
+                    <div class="modal-form__wrap">
+                        <input type="tel" name="telephon" id="telephon" class="modal-form__input">
+                        <svg class="modal-form__icon"><use href="./images/icons.svg#phone">
                         </svg>
                     </div>
                 </div>
 
-                <div class="form-element">
-                    <label for="email">Пошта</label>
-                    <div class="form-wrap">
-                        <input type="email" name="email" id="email">
-                        <svg class="icon-modal"><use href="./images/icons.svg#email">
+                <div class="modal-form__element">
+                    <label for="email" class="modal-form__label">Пошта</label>
+                    <div class="modal-form__wrap">
+                        <input type="email" name="email" id="email" class="modal-form__input">
+                        <svg class="modal-form__icon"><use href="./images/icons.svg#email">
                         </svg>
                     </div>
                 </div>
 
-                <div class="form-element">
-                    <label for="name">Коментар</label>
-                    <textarea name="commit" id="commit" cols="30" rows="10" class="commit-modal" placeholder="Введіть текст"></textarea>
+                <div class="modal-form__element">
+                    <label for="name" class="modal-form__label">Коментар</label>
+                    <textarea name="commit" id="commit" cols="30" rows="10" class="modal-form__commit" placeholder="Введіть текст"></textarea>
                 </div>
 
                 <div class="form-check">
-                    <label for="checkbox" class="form-check-label">
-                        <input type="checkbox" name="checkbox" id="checkbox" class="checkbox-input visually-hidden" required>
-                        <svg class="icon-check icon-check-off"><use href="./images/icons.svg#check-off"></svg>
-                        <svg class="icon-check icon-check-on"><use href="./images/icons.svg#check-on"><svg>
-                        <span class="check-contract">Погоджуюся з розсилкою та приймаю <a href="" class="contract link">Умови договору</a></span>
+                    <label for="checkbox" class="form-check__label">
+                        <input type="checkbox" name="checkbox" id="checkbox" class="form-check__input" required>
+                        <svg class="form-check__icon--off"><use href="./images/icons.svg#check-off"></svg>
+                        <svg class="form-check__icon--on"><use href="./images/icons.svg#check-on"><svg>
+                        <span class="form-check__text">Погоджуюся з розсилкою та приймаю <a href="" class="form-check__contract">Умови договору</a></span>
                     </label>
                 </div>
 

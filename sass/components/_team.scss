@@ -45,6 +45,8 @@
 
 .social-card {
   @extend %card-social;
+  align-items: center;
+  justify-content: center;
 }
 
 

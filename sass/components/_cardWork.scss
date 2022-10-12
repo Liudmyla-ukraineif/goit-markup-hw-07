@@ -1,39 +1,47 @@
 /*page portpholio*/
+.painting {
+  @extend %section;
+}
 
-.section-work-list {
+.painting__title {
+  @extend %visually-hidden;
+}
+
+.work-list {
+  @extend %list;
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
 }
 
-.section-work-item {
+.work-list__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-top: 30px;
   margin-left: 30px;
 }
 
-.work-card {
+.work-list__card {
+  @extend %list;
+  @extend %link;
   display: inline-block;
   width: 100%;
   height: 100%;
   border: 1px solid #eeeeee;
   box-shadow: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover, &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
-.work-card:hover,
-.work-card:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.card-details {
+.work-list__details {
   position: relative;
   overflow: hidden;
 }
 
-.project-details {
+.work-list__text {
   position: absolute;
   top: 0;
   left: 0;
@@ -52,17 +60,17 @@
 
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .work-list__card:hover & {
+    transform: translateY(0);
+  }
 }
 
-.work-card:hover .project-details {
-  transform: translateY(0);
-}
-
-.card {
+.work-list__block {
   padding: 20px 24px;
 }
 
-.section-work-title {
+.work-list__title {
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -71,7 +79,7 @@
   color: var(--title-text-color);
 }
 
-.section-work-projact {
+.work-list__direction {
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);
